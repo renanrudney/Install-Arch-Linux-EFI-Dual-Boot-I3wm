@@ -175,4 +175,45 @@ _**37- Caso esteja instalando em um notebook, o seguinte comando para drivers de
 
 >reboot
 
-**O sistema base está instalado!!!**
+**O sistema base está instalado!!!**<br>
+_A partir daqui é possível se virar sozinho, darei uma base de onde começar, com a interface i3 e um gerenciador de login básico, o ideal é pesquisar e personalizar como quiser!_<br>
+<br>0- Interface básica de configuração de rede:
+>nmtui
+
+1- Para ter algum tipo de interface/GUI, execute o seguinte comando:
+>sudo pacman -S xorg-server xorg-xinit xorg-apps gvfs-mtp sshfs
+
+2- Verifique sua placa gráfica
+>  lspci | grep VGA
+
+Algumas opções de instalação (no meu caso usei o da Intel):<br>
+ pacman -S virtualbox-guest-utils — para o virtualbox<br>
+pacman -S xf86-video-amdgpu — para placas amd-radeon<br>
+ pacman -S xf86-video-nouveau — para placa de vídeo Nvidia)<br>
+_pacman -S xf86-video-intel — para drivers da intel_<br>
+
+3- Instalar utilitários de som
+> sudo pacman -S pavucontrol alsa-firmware alsa-utils alsa-plugins pulseaudio-alsa pulseaudio
+
+4- Instalar uma interface (no meu caso, o i3)
+> sudo pacman -S i3
+
+5- Instalar um gerenciador de login (no meu caso, o lightDM)
+> sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+>> sudo systemctl enable lightdm
+>>> reboot
+
+*Após reiniciar e logar, digite:
+> su 
+
+6 - Criar e colocar pastas padrões dos usuários
+> pacman -S xdg-user-dirs
+>> xdg-user-dirs-update
+
+7- Deixar configuração do teclado salva no ambiente X:
+> localectl set-x11-keymap br abnt2
+
+>reboot
+
+**A partir daqui é mais do que suficiente para explorar a distro Arch Linux com o i3!!!**
+
