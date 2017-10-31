@@ -181,7 +181,7 @@ _A partir daqui é possível se virar sozinho, darei uma base de onde começar, 
 >nmtui
 
 1- Para ter algum tipo de interface/GUI, execute o seguinte comando:
->sudo pacman -S xorg-server xorg-xinit xorg-apps gvfs-mtp sshfs
+>sudo pacman -S xorg-server xorg-xinit xorg-apps gvfs-mtp sshfs xterm
 
 2- Verifique sua placa gráfica
 >  lspci | grep VGA
