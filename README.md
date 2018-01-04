@@ -155,7 +155,7 @@ _**Descomente a opção e salve**_
 > %wheel ALL=(ALL) ALL
 
 **36- Instalar componentes do Wi-Fi.**
->pacman -S wpa-supplicant networkmanager net-tools
+>pacman -S wpa_supplicant networkmanager net-tools
 >>systemctl enable NetworkManager
 
 Em seguida, você pode configurar Ethernet ou Wifi:
@@ -201,9 +201,8 @@ _pacman -S xf86-video-intel — para drivers da intel_<br>
 5- Instalar um gerenciador de login (no meu caso, o lightDM)
 > sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 >> sudo systemctl enable lightdm
->>> reboot
 
-*Após reiniciar e logar, digite:
+*Digite:
 > su 
 
 6 - Criar e colocar pastas padrões dos usuários
@@ -216,4 +215,7 @@ _pacman -S xf86-video-intel — para drivers da intel_<br>
 >reboot
 
 **A partir daqui é mais do que suficiente para explorar a distro Arch Linux com o i3!!!**
+*Caso não apareça o Windows no grub, execute novamente só que agora logado no arch e utilizando o terminal:
+> grub-mkconfig -o /boot/grub/grub.cfg
 
+*O os-prober irá detectar o windows e aparecerá novamente no grub!
