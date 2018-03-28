@@ -167,8 +167,7 @@ _**36- Caso esteja instalando em um notebook, o seguinte comando para drivers de
 **Pronto para reiniciar o sistema!**
 >exit
 >>umount /mnt/boot
->>>umount /mnt/home
->>>>umount /mnt
+>>>umount /mnt
 
 >reboot
 
