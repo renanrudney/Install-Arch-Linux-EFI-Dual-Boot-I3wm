@@ -3,22 +3,8 @@
 
  _Ao bootar a mídia de instalação do Arch, você estará logado como # (root) em automatic login._<br>
  _*Será utilizado o editor de texto nano ao decorrer do tutorial (para salvar: "ctrl+o", sair: "ctrl+x"), fica a seu critério qual editor utilizar!_<br><br>
-1- Definir um layout de teclado (PT-BR)
-> loadkeys br-abnt2 
 
-2- Mudar a fonte do terminal (tty)
-> setfont lat0-16
-
-3- Configurar localização/idioma
-> nano /etc/locale.gen
->>**descomentar essa linha:**
->>> pt_BR.UTF-8 UTF-8
-
-4- Criar o arquivo de configuração de idioma
-> locale-gen
->>export LANG=pt_BR.UTF-8
-
-**5- Conectar sua internet**<br>
+**- Conectar sua internet**<br>
 *Caso sua internet seja cabeada:
 > dhcpcd
 
