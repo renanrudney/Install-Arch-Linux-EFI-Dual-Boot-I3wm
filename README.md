@@ -4,6 +4,8 @@
  _Ao bootar a mídia de instalação do Arch, você estará logado como # (root) em automatic login._<br>
  _*Será utilizado o editor de texto nano ao decorrer do tutorial (para salvar: "ctrl+o", sair: "ctrl+x"), fica a seu critério qual editor utilizar!_<br><br>
 
+0- Carregar o layout do teclado
+> loadkeys br-abnt2
 
 1- Testar a Conexão
 > ping -c 3 www.google.com
